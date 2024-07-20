@@ -21,7 +21,7 @@ const Homepage = () => {
       </div>
       {/* Right */}
       <div className="hidden lg:block w-[30%]">
-        <RightMenu />
+        <RightMenu userId="" />
       </div>
     </div>
   );
