@@ -30,7 +30,7 @@ const Comments = () => {
       {/* Displays all the comments */}
       <div className="mt-10">
         {/* COMMENT */}
-        <div className="flex gap-2">
+        <div className="flex gap-4 justify-between mt-6">
           {/* AVATAR */}
           <Image
             src="https://images.pexels.com/photos/16513086/pexels-photo-16513086/free-photo-of-close-up-of-moss-on-a-tree-branch.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -40,25 +40,37 @@ const Comments = () => {
             className="w-10 h-10 rounded-full"
           />
           {/* DESCRIPTION */}
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 items-start">
             {/* Username and Description with interaction container */}
-            <div className="flex w-full justify-between items-center">
-              <span className="font-medium">User name</span>
-              {/* ICON */}
-              <Image
-                src="/more.png"
-                alt="more"
-                width={13}
-                height={13}
-                className="cursor-pointer"
-              />
-            </div>
+            <span className="font-medium">User name</span>
             <p>
               Absolutely love the rich colors in this photo! 🍁 It’s amazing how
               nature’s palette can be so calming and inspiring. Do you have a
               favorite time of year to enjoy these beautiful tones? 🌟
             </p>
+            <div className="flex items-center gap-8 text-xs text-gray-500 mt-2">
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/like.png"
+                  alt="more"
+                  width={16}
+                  height={16}
+                  className="w-4 h-4 cursor-pointer"
+                />
+                <span className="text-gray-300">|</span>
+                <span className="text-gray-500">123 Likes</span>
+              </div>
+              <div className="">Reply</div>
+            </div>
           </div>
+          {/* ICON */}
+          <Image
+            src="/more.png"
+            alt="more"
+            width={16}
+            height={16}
+            className="w-4 h-4 cursor-pointer"
+          />
         </div>
       </div>
     </div>
